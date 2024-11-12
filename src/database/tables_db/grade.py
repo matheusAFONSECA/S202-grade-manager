@@ -8,8 +8,8 @@ class Grade:
 
     def create_grade(self):
         query = """
-    MERGE (g:Grade {grade_id: $grade_id, obtained_grade: $obtained_grade, subject_id: $subject_id, teacher_id: $teacher_id})
-    """
+                MERGE (g:Grade {grade_id: $grade_id, obtained_grade: $obtained_grade, subject_id: $subject_id, teacher_id: $teacher_id})
+                """
         parameters = {
             "grade_id": self.grade_id,
             "obtained_grade": self.obtained_grade,
