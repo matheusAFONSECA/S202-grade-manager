@@ -1,6 +1,32 @@
 # S202-grade-manager
 Repository dedicated to storing the S202 - Database II project where a grading system is made using a non-relational database.
 
+## Usage
+1. Install the requirements:
+```bash
+pip install -r requirements.txt
+```
+2. (OPTIONAL) If you will develop, install the CI requirements:
+```bash
+pip install -r requirements-dev.txt
+```
+3. Create a `.env` file running the following script:
+  - UNIX/Mac
+  ```bash
+  ./scripts/create_env.sh
+  ```
+  - Windows
+  ```bash
+  ./scripts/create_env.bat
+  ```
+4. Edit the `.env` file with your neo4j sandbox credentials, provided when you create an account or new project.
+5. Run the project
+```bash
+python3 main.py
+```
+In the Neo4j Sandbox you can see the data and relationships created by the program:
+![app_example](docs/app_example.png)
+
 ## Code Quality
 ### Linter
 A linter that checks for syntax errors, potential bugs, and style violations.\
