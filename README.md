@@ -1,6 +1,39 @@
 # S202-grade-manager
 Repository dedicated to storing the S202 - Database II project where a grading system is made using a non-relational database.
 
+## Class Diagram
+```mermaid
+classDiagram
+  class Student {
+    +int registration_number
+    +string course
+    +string name
+  }
+
+  class Teacher {
+    +int teacher_id
+    +string name
+  }
+
+  class Subject {
+    +string subject_id
+    +string name
+    +int teacher_id
+  }
+
+  class Grade {
+    +int grade_id
+    +float obtained_grade
+    +string subject_id
+    +int teacher_id
+  }
+
+  Student "1" --> "0..*" Grade: Receives
+  Teacher "1" --> "0..*" Subject: Teaches
+  Student "1..*" --> "1" Teacher: Is_taught_by
+  Student "1..*" --> "1..*" Subject: Studies
+```
+
 ## Usage
 1. Install the requirements:
 ```bash
