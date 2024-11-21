@@ -1,9 +1,5 @@
-feat(struct): changed struct of folders
+feat(struct): base interface 
 
-The folder structure has been 
-changed with the aim of making it 
-simpler and more intuitive way 
-of allocating code thus modularizing 
-the code. The base files for 
-building the interface were also 
-the requirements were updated.
+A base interface was
+made, it's necessary 
+build the features better.
