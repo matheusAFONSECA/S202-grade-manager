@@ -1,5 +1,5 @@
-feat(struct): base interface 
+feat(project): code modularization
 
-A base interface was
-made, it's necessary 
-build the features better.
+The code was modularizated
+to make the interface more 
+simple to deal.
