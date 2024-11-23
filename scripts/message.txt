@@ -1,9 +1,6 @@
-feat(project): Features running properly
+feat(docker): project running with docker
 
-All features proposed (add data,
-view data by filtering, manage
-relationships and db operations)
-are running. It's important to 
-emphasize that now the application
-can drop the data in database and
-rebuild a base data to work.
+Now the project uses docker to run.
+To build the image use the command:
+docker-compose build. To run the
+container: docker-compose up.
