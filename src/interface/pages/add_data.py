@@ -45,13 +45,15 @@ class AddData:
         elif data_type == "Subject":
             st.subheader("Add a Subject")
             subject_id = st.text_input("Subject ID")
-            name = st.text_input("Name")
+            name = st.text_input(
+                "Subject Name"
+            )  # Corrigir para 'Subject Name' em vez de 'Name'
             teacher_id = st.number_input("Teacher ID", min_value=1, step=1)
             if st.button("Add Subject"):
                 subject = self.subject(
                     subject_id, name, teacher_id, st.session_state["db"]
                 )
-                subject.create_subject()
+                subject.create_subject()  # Verifique se o nome da matéria é atribuído corretamente
                 st.success(f"Subject {name} added successfully!")
 
         elif data_type == "Grade":

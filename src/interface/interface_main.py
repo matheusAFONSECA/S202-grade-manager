@@ -8,7 +8,7 @@ from interface.pages.manage_relationships import ManageRelationships
 class Interface:
     def __init__(self, db, student, teacher, subject, grade):
         self.add_data = AddData(db, student, teacher, subject, grade)
-        self.db_operations = DBoperations(db)
+        self.db_operations = DBoperations(db, student, teacher, subject, grade)
         self.view_data = ViewData(db)
         self.manage_relationships = ManageRelationships(
             db, student, teacher, subject, grade

@@ -1,5 +1,9 @@
-feat(project): code modularization
+feat(project): Features running properly
 
-The code was modularizated
-to make the interface more 
-simple to deal.
+All features proposed (add data,
+view data by filtering, manage
+relationships and db operations)
+are running. It's important to 
+emphasize that now the application
+can drop the data in database and
+rebuild a base data to work.
