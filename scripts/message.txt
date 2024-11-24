@@ -1,6 +1,6 @@
-feat(docker): project running with docker
+feat(update-data): Added feature to update data
 
-Now the project uses docker to run.
-To build the image use the command:
-docker-compose build. To run the
-container: docker-compose up.
+Now the aplication can update data
+in the database based on informations.
+Added, the ip of the docker file 
+defined to localhost.

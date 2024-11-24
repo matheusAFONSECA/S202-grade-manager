@@ -1,6 +1,7 @@
 import streamlit as st
 from interface.pages.add_data import AddData
 from interface.pages.view_data import ViewData
+from interface.pages.update_data import UpdateData
 from interface.pages.db_operations import DBoperations
 from interface.pages.manage_relationships import ManageRelationships
 
@@ -13,6 +14,7 @@ class Interface:
         self.manage_relationships = ManageRelationships(
             db, student, teacher, subject, grade
         )
+        self.update_data = UpdateData(db, student, teacher, subject, grade)
 
     def run(self):
         st.set_page_config(
@@ -21,7 +23,14 @@ class Interface:
 
         # Sidebar navigation
         menu = st.sidebar.selectbox(
-            "Menu", ["Add Data", "View Data", "Relationships", "Database Operations"]
+            "Menu",
+            [
+                "Add Data",
+                "View Data",
+                "Relationships",
+                "Update Data",
+                "Database Operations",
+            ],
         )
 
         # Dynamically load and execute the selected page
@@ -31,5 +40,7 @@ class Interface:
             self.view_data.run()
         elif menu == "Relationships":
             self.manage_relationships.run()
+        elif menu == "Update Data":
+            self.update_data.run()
         elif menu == "Database Operations":
             self.db_operations.run()
