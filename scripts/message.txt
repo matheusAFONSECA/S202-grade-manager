@@ -1,6 +1,4 @@
-feat(update-data): Added feature to update data
+docs(ReadMe): Documentation updated
 
-Now the aplication can update data
-in the database based on informations.
-Added, the ip of the docker file 
-defined to localhost.
+Documentation related to 
+the code was updated.

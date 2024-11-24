@@ -8,6 +8,6 @@ services:
       - "8501:8501"
     volumes:
       - ./src:/app/src
-      - ./.env:/app/.env  # Monta o arquivo .env no container
+      - ./.env:/app/.env
     environment:
       - PYTHONUNBUFFERED=1
