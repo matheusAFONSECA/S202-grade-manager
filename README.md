@@ -145,6 +145,6 @@ isort .
 
 Undergraduate student in the eighth (8th) semester of Computer Engineering at the National Institute of Telecommunications (Inatel). I participated in a Scientific Initiation at the Cybersecurity and Internet of Things Laboratory (CS&ILAB), where, in the Park Here project, I developed skills in computer vision applied to parking systems, focusing on license plate recognition and vehicle identification. Additionally, I served as a teaching assistant for Physics 1, 2, and 3, helping with practical classes, report writing, and answering theoretical questions. Currently, I am an intern at the Inatel Competence Center (ICC) in the PDI SW department.
 
-### [Pedro Luis Dionísio Fraga]()
+### [Pedro Luis Dionísio Fraga](https://github.com/PedroLuisDionisioFraga)
 
 I am a Computer Engineering student at Inatel, graduating in 2025, with expertise in Embedded Linux, firmware development, and C/C++ programming, complemented by Python skills. Since October 2023, I have been a firmware developer at Nouvenn IoT, creating and implementing innovative IoT solutions. Additionally, I have been a laboratory monitor at Inatel since August 2022, providing technical and educational support to students. I am passionate about embracing challenges and contributing to impactful technology projects.
