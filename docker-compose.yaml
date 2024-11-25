@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  streamlit:
+    build:
+      context: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./src:/app/src
+      - ./.env:/app/.env
+    environment:
+      - PYTHONUNBUFFERED=1

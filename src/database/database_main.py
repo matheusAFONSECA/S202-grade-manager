@@ -2,13 +2,13 @@ import os
 
 from dotenv import load_dotenv
 
-from src.database import Database
-from src.grade import Grade
-from src.student import Student
-from src.subject import Subject
-from src.teacher import Teacher
+from database_query import Database
+from tables_db.grade import Grade
+from tables_db.student import Student
+from tables_db.subject import Subject
+from tables_db.teacher import Teacher
 
-load_dotenv("/home/pedro/inatel/database_II/lab/projects/01/.env")
+load_dotenv(".env")
 
 # Access the environment variables
 uri = os.getenv("NEO4J_URI")
